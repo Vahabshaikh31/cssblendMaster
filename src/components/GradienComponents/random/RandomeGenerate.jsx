@@ -61,6 +61,7 @@ const RandomeGenerate = () => {
           <div className='G_Nav'>
             <GradientNavbar />
           </div>
+          
           <div className='G_positio2'>
             <div className='G_positions'>
               <button className='Gbtns_p a1' onClick={() => handlePositionClick('to top')}>

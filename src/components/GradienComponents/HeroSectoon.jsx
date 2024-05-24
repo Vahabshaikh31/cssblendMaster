@@ -6,9 +6,6 @@ import _3ColorAtTime from './3 color/_3ColorAtTime';
 const HeroSectoon = () => {
     return (
         <>
-
-
-
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<PALETTES />} />

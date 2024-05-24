@@ -1,23 +1,44 @@
 .Pallets_main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background: #ede9e9;
     color: black;
+    width: 100%;
+    margin-top: 100px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /* Center items horizontally */
+    padding: 20px; 
+    width: calc(100% - 5rem); /* Subtract the width of the navbar */
+    /* Adjust as needed */
+    margin-left: 5rem; /* Adjust margin to account for navbar width */
 }
 
 .img1 {
-    position: absolute;
-    top: 0;
     width: 11rem;
     height: 10rem;
 }
 
 .P_hero {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh; /* Use min-height for responsive hero section */
     display: flex;
     align-items: center;
+    justify-content: center; /* Center content horizontally */
     padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    width: 100%;
 }

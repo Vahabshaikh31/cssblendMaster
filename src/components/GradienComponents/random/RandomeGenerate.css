@@ -1,50 +1,35 @@
-/* Gradient Container */
-.G_Body {
+
+  .G_Body {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     background: linear-gradient(to right top, #116af1, #009bff, #00bad8, #00ce7c, #94d600);
-}
-
-.G_Nav {
-    left: 0;
-    width: 13rem;
-}
-
-
-
-.G_main {
+    width: calc(100% - 5rem); 
+    margin-left: 5rem; 
+  } 
+  
+  /* Main Container */
+  .G_main {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-}
+    height: 95vh;
+    padding: 20px;
+    padding-left: 15rem;
 
-.G_positio2 {
+  }
+  
+  /* Position and Color Buttons Container */
+  .G_positio2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 15rem;
-}
-
-.colorbtns {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-button {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-}
-
-
-.G_colorBtn {
+  }
+  
+  .G_colorBtn {
     background-color: #693a7d;
     color: #fff;
     height: 5.6rem;
@@ -54,9 +39,17 @@ button {
     box-shadow: 10px 10px 14px 1px rgba(0, 0, 0, 0.2);
     letter-spacing: 0.094em;
     text-transform: uppercase;
-}
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .G_colorBtn:hover {
+    transform: translateY(-5px); /* Add a subtle hover effect */
+  }
 
-.Gbtns_p {
+  .Gbtns_p {
     color: #000;
     height: 3.6rem;
     width: 3.6rem;
@@ -67,15 +60,19 @@ button {
     margin: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
     padding: 3px;
-}
-
-.Gbtns_p:hover {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .Gbtns_p:hover {
     color: #000;
     border: 1px solid #171313;
     box-shadow: 0px 0px 8px black;
-}
-
-.cpyCode {
+  }
+  
+  /* Copy Code Section */
+  .cpyCode {
     font-family: 'Space Mono', monospace;
     width: fit-content;
     margin: 2rem auto;
@@ -90,45 +87,14 @@ button {
     cursor: pointer;
     width: 22rem;
     transition: background-color 0.3s ease;
-}
-
-
-
-.a1 {
-    transform: rotate(270deg);
-}
-
-/* Rotates the arrow for 'to bottom' position */
-.a2 {
-    transform: rotate(90deg);
-}
-
-/* Flips and rotates the arrow for 'to left' position */
-.a3 {
-    transform: rotate(180deg);
-}
-
-/* Rotates the arrow for 'to right' position */
-.a4 {
-    transform: rotate(0deg);
-}
-
-/* Rotates the arrow for 'to top left' position */
-.a5 {
-    transform: rotate(235deg);
-}
-
-/* Rotates the arrow for 'to top right' position */
-.a6 {
-    transform: rotate(-45deg);
-}
-
-/* Rotates the arrow for 'to bottom left' position */
-.a7 {
-    transform: rotate(125deg);
-}
-
-/* Rotates the arrow for 'to bottom right' position */
-.a8 {
-    transform: rotate(45deg);
-}
+  }
+  
+  /* Arrow Positions */
+  .a1 { transform: rotate(270deg); }
+  .a2 { transform: rotate(90deg); }
+  .a3 { transform: rotate(180deg); }
+  .a4 { transform: rotate(0deg); }
+  .a5 { transform: rotate(235deg); }
+  .a6 { transform: rotate(-45deg); }
+  .a7 { transform: rotate(125deg); }
+  .a8 { transform: rotate(45deg); }
