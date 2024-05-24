@@ -1,0 +1,23 @@
+.Pallets_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #ede9e9;
+    color: black;
+}
+
+.img1 {
+    position: absolute;
+    top: 0;
+    width: 11rem;
+    height: 10rem;
+}
+
+.P_hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}

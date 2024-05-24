@@ -1,12 +1,37 @@
 /* Gradient Container */
+.G_Body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(to right top, #116af1, #009bff, #00bad8, #00ce7c, #94d600);
+}
+
+.G_Nav {
+    left: 0;
+    width: 13rem;
+}
+
+
+
 .G_main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.G_positio2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to right top, #116af1, #009bff, #00bad8, #00ce7c, #94d600);
+    margin-left: 15rem;
+}
+
+.colorbtns {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 button {
@@ -22,9 +47,9 @@ button {
 .G_colorBtn {
     background-color: #693a7d;
     color: #fff;
-    height: 50px;
-    width: 180px;
-    margin: 10px;
+    height: 5.6rem;
+    width: 18rem;
+    margin: 1rem;
     border-radius: 50px;
     box-shadow: 10px 10px 14px 1px rgba(0, 0, 0, 0.2);
     letter-spacing: 0.094em;
@@ -33,8 +58,8 @@ button {
 
 .Gbtns_p {
     color: #000;
-    height: 36px;
-    width: 36px;
+    height: 3.6rem;
+    width: 3.6rem;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -53,7 +78,7 @@ button {
 .cpyCode {
     font-family: 'Space Mono', monospace;
     width: fit-content;
-    margin: 20px auto;
+    margin: 2rem auto;
     display: block;
     line-height: 1.4;
     letter-spacing: 0.2px;
@@ -63,6 +88,7 @@ button {
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    width: 22rem;
     transition: background-color 0.3s ease;
 }
 

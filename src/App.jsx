@@ -1,14 +1,11 @@
-import Gradient from './components/GradienComponents/Gradient'
+import HeroSectoon from './components/GradienComponents/HeroSectoon';
 
 function App() {
-
-  return (
-    <>
-    {/* <Navbar/> */}
-      <Gradient />
-
-    </>
-  )
+    return (
+        <>
+            <HeroSectoon />
+        </>
+    );
 }
 
-export default App
+export default App;
