@@ -1,5 +1,5 @@
 
-  .G_Body {
+.G_Body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,43 +8,18 @@
     width: calc(100% - 5rem); 
     margin-left: 5rem; 
   } 
-  
-  /* Main Container */
+
   .G_main {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 93vh;
+    height: 100vh;
     padding: 20px;
     padding-left: 15rem;
 
   }
-  
-  /* Position and Color Buttons Container */
-  .G_positio2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .G_colorBtn {
-    background-color: #693a7d;
-    color: #fff;
-    height: 5.6rem;
-    width: 18rem;
-    margin: 1rem;
-    border-radius: 50px;
-    box-shadow: 10px 10px 14px 1px rgba(0, 0, 0, 0.2);
-    letter-spacing: 0.094em;
-    text-transform: uppercase;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
+
   .G_colorBtn:hover {
     transform: translateY(-5px); /* Add a subtle hover effect */
   }
@@ -98,3 +73,36 @@
   .a6 { transform: rotate(-45deg); }
   .a7 { transform: rotate(125deg); }
   .a8 { transform: rotate(45deg); }
+
+
+.mainc {
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    width: calc(100% - 5rem);
+    margin-left: 5rem;
+    display: flex;
+    position: relative;
+}
+
+.C2container1{
+    background-color: red;
+    width: 30rem;
+}
+
+.colorseletor1 {
+    position: absolute;
+    /* right: 20px; */
+    top: 0;
+    transform: scale(.8);
+}
+
+
+
+button {
+    border: 1px solid black;
+}

@@ -8,12 +8,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 40px;
+  padding: 60px 20px;
   z-index: 111;
   border-right: 1px solid aqua; /* Change border to right side */
   background-color: white;
   flex-direction: column; /* Change flex direction to column */
-  
+  font-size: 1.6rem;
+  color: #000000a7;
+  font-weight: bold;
 }
 
 .Logo {

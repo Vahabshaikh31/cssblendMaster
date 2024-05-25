@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import './RandomeGenerate.css';
 import arrow from '../../../assets/arrow.svg';
 import GradientNavbar from '../Navabr/GradientNavbar';
+
 const RandomeGenerate = () => {
+
   const generateColor = () => {
     let chars = "123456789abcdef";
     let color = "#";
@@ -56,12 +58,12 @@ const RandomeGenerate = () => {
   return (
     <>
       <div className='G_Body' style={{ background: gradientStyle, padding: '20px' }}>
-      
+
         <div className="G_main">
           <div className='G_Nav'>
             <GradientNavbar />
           </div>
-          
+
           <div className='G_positio2'>
             <div className='G_positions'>
               <button className='Gbtns_p a1' onClick={() => handlePositionClick('to top')}>
@@ -91,7 +93,6 @@ const RandomeGenerate = () => {
             </div>
 
             <div className='colorbtns'>
-
               {colors.map((color, index) => (
                 <button key={index} className='G_colorBtn py-4 px-4 focus:outline-none text-center me-2 mb-2' style={{ backgroundColor: color }} onClick={() => handleColorChange(index)}>{color}</button>
               ))}
