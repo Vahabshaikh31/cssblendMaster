@@ -57,7 +57,7 @@ const RandomeGenerate = () => {
 
   return (
     <>
-      <div className='G_Body' style={{ background: gradientStyle, padding: '20px' }}>
+      <div className='G_Body' style={{ background: gradientStyle }}>
 
         <div className="G_main">
           <div className='G_Nav'>
