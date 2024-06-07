@@ -1,0 +1,7 @@
+        
+    .textC{
+        opacity: 0 ;
+    }
+    .textC:hover{
+        opacity: 1;
+    }

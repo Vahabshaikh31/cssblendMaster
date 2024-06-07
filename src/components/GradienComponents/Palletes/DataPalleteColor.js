@@ -1,113 +1,221 @@
 const DataPalleteColor = [
+
     {
-      colors1: "#124eaa",
-      colors2: "#3a7ca5",
-      colors3: "#7cb9a5",
-      colors4: "#c5e1a5",
+      "paletteName": "Golden Hour",
+      "colors": {
+        "color1": "#ffd700",
+        "color2": "#ffb84d",
+        "color3": "#ff9933",
+        "color4": "#e68a00"
+      }
     },
     {
-      colors1: "#ff5733",
-      colors2: "#ffa700",
-      colors3: "#fffb96",
-      colors4: "#ccff33",
+      "paletteName": "Mystic Forest",
+      "colors": {
+        "color1": "#00563f",
+        "color2": "#008c6b",
+        "color3": "#00b38f",
+        "color4": "#00cc99"
+      }
     },
     {
-      colors1: "#e5989b",
-      colors2: "#6d6875",
-      colors3: "#b5838d",
-      colors4: "#6a0572",
+      "paletteName": "Royal Velvet",
+      "colors": {
+        "color1": "#800080",
+        "color2": "#993399",
+        "color3": "#b366ff",
+        "color4": "#cc99ff"
+      }
     },
     {
-      colors1: "#009b77",
-      colors2: "#ff6b6b",
-      colors3: "#f4acb7",
-      colors4: "#577590",
+      "paletteName": "Coral Reef",
+      "colors": {
+        "color1": "#ff6f61",
+        "color2": "#ffcc99",
+        "color3": "#ff6666",
+        "color4": "#ff9933"
+      }
     },
     {
-      colors1: "#f72585",
-      colors2: "#7209b7",
-      colors3: "#3a0ca3",
-      colors4: "#4361ee",
+      "paletteName": "Midnight Sky",
+      "colors": {
+        "color1": "#191970",
+        "color2": "#000080",
+        "color3": "#4169e1",
+        "color4": "#6495ed"
+      }
     },
     {
-      colors1: "#ff6b6b",
-      colors2: "#6b705c",
-      colors3: "#354f52",
-      colors4: "#1eae98",
+      "paletteName": "Summer Citrus",
+      "colors": {
+        "color1": "#ff9933",
+        "color2": "#ffcc00",
+        "color3": "#ffbf00",
+        "color4": "#ffd700"
+      }
     },
     {
-      colors1: "#011627",
-      colors2: "#ff3366",
-      colors3: "#2ec4b6",
-      colors4: "#f4a261",
+      "paletteName": "Lavender Fields",
+      "colors": {
+        "color1": "#e6e6fa",
+        "color2": "#d8bfd8",
+        "color3": "#ba55d3",
+        "color4": "#9932cc"
+      }
     },
     {
-      colors1: "#1eae98",
-      colors2: "#8ecae6",
-      colors3: "#219ebc",
-      colors4: "#023047",
+      "paletteName": "Sunny Days",
+      "colors": {
+        "color1": "#ffff66",
+        "color2": "#ffcc00",
+        "color3": "#ff9900",
+        "color4": "#ff6600"
+      }
     },
     {
-      colors1: "#3a86ff",
-      colors2: "#fad02e",
-      colors3: "#ff6b6b",
-      colors4: "#50ffab",
+      "paletteName": "Emerald Isle",
+      "colors": {
+        "color1": "#50c878",
+        "color2": "#00a86b",
+        "color3": "#00755e",
+        "color4": "#004d40"
+      }
     },
     {
-      colors1: "#ff9f1c",
-      colors2: "#ffbf69",
-      colors3: "#cbf3f0",
-      colors4: "#a0ced9",
+      "paletteName": "Vintage Romance",
+      "colors": {
+        "color1": "#9370db",
+        "color2": "#b19cd9",
+        "color3": "#d3b8de",
+        "color4": "#f0e6f3"
+      }
     },
     {
-      colors1: "#f72585",
-      colors2: "#7209b7",
-      colors3: "#3a0ca3",
-      colors4: "#4361ee",
+      "paletteName": "Autumn Glow",
+      "colors": {
+        "color1": "#ff7f50",
+        "color2": "#ff8c00",
+        "color3": "#d2691e",
+        "color4": "#8b4513"
+      }
     },
     {
-      colors1: "#ff6b6b",
-      colors2: "#6b705c",
-      colors3: "#354f52",
-      colors4: "#1eae98",
+      "paletteName": "Ocean Sunset",
+      "colors": {
+        "color1": "#ff4500",
+        "color2": "#ffa07a",
+        "color3": "#ffd700",
+        "color4": "#ff6347"
+      }
     },
     {
-      colors1: "#011627",
-      colors2: "#ff3366",
-      colors3: "#2ec4b6",
-      colors4: "#f4a261",
+      "paletteName": "Pastel Paradise",
+      "colors": {
+        "color1": "#ffcccc",
+        "color2": "#ff9999",
+        "color3": "#ff6666",
+        "color4": "#ff3333"
+      }
     },
     {
-      colors1: "#1eae98",
-      colors2: "#8ecae6",
-      colors3: "#219ebc",
-      colors4: "#023047",
+      "paletteName": "Tropical Rainforest",
+      "colors": {
+        "color1": "#006400",
+        "color2": "#228b22",
+        "color3": "#32cd32",
+        "color4": "#7cfc00"
+      }
     },
     {
-      colors1: "#3a86ff",
-      colors2: "#fad02e",
-      colors3: "#ff6b6b",
-      colors4: "#50ffab",
+      "paletteName": "Cherry Blossom",
+      "colors": {
+        "color1": "#ffc0cb",
+        "color2": "#ffb6c1",
+        "color3": "#ff69b4",
+        "color4": "#ff1493"
+      }
     },
     {
-      colors1: "#ff9f1c",
-      colors2: "#ffbf69",
-      colors3: "#cbf3f0",
-      colors4: "#a0ced9",
+      "paletteName": "Blue Lagoon",
+      "colors": {
+        "color1": "#add8e6",
+        "color2": "#87ceeb",
+        "color3": "#87cefa",
+        "color4": "#00bfff"
+      }
     },
     {
-      colors1: "#2d00f7",
-      colors2: "#45046a",
-      colors3: "#3e2689",
-      colors4: "#b4aee8",
+      "paletteName": "Cotton Candy",
+      "colors": {
+        "color1": "#ffc0cb",
+        "color2": "#ffb6c1",
+        "color3": "#ff69b4",
+        "color4": "#ff1493"
+      }
     },
     {
-      colors1: "#9d4edd",
-      colors2: "#f72585",
-      colors3: "#7209b7",
-      colors4  : "#3a0ca3",
-    }
-  ];
-  
-  export default DataPalleteColor;
-  
+      "paletteName": "Sunflower Fields",
+      "colors": {
+        "color1": "#ffdd00",
+        "color2": "#ffbf00",
+        "color3": "#ffaa00",
+        "color4": "#ff9900"
+      }
+    },
+    {
+      "paletteName": "Purple Haze",
+      "colors": {
+        "color1": "#800080",
+        "color2": "#9932cc",
+        "color3": "#8a2be2",
+        "color4": "#9370db"
+      }
+    },
+    {
+      "paletteName": "Rainbow Delight",
+      "colors": {
+        "color1": "#ff0000",
+        "color2": "#ff7f00",
+        "color3": "#ffff00",
+        "color4": "#00ff00"
+      }
+    },
+    {
+      "paletteName": "Silver Linings",
+      "colors": {
+        "color1": "#c0c0c0",
+        "color2": "#d3d3d3",
+        "color3": "#e0e0e0",
+        "color4": "#f0f0f0"
+      }
+    },
+    {
+      "paletteName": "Electric Neon",
+      "colors": {
+        "color1": "#ffcc00",
+        "color2": "#ccff00",
+        "color3": "#00ff00",
+        "color4": "#00ccff"
+      }
+    },
+    {
+      "paletteName": "Dreamy Clouds",
+      "colors": {
+        "color1": "#f5f5f5",
+        "color2": "#e0e0e0",
+        "color3": "#bdbdbd",
+        "color4": "#9e9e9e"
+      }
+    },
+    {
+      "paletteName": "Vintage Rose",
+      "colors": {
+        "color1": "#ffc0cb",
+        "color2": "#ffb6c1",
+        "color3": "#ff69b4",
+        "color4": "#ff1493"
+      }
+    }  
+];
+
+export default DataPalleteColor;

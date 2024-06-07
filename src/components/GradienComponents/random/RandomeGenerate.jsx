@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './RandomeGenerate.css';
 import arrow from '../../../assets/arrow.svg';
-import GradientNavbar from '../Navabr/GradientNavbar';
+import GradientNavbar from '../Navbr/GradientNavbar';
 
 const RandomeGenerate = () => {
 
@@ -45,9 +45,7 @@ const RandomeGenerate = () => {
     });
   };
 
-  const handlePositionClick = (newPosition) => {
-    setPosition(newPosition);
-  };
+
 
   const handleCopyClick = () => {
     navigator.clipboard.writeText(`background: ${gradientStyle};`).then(() => {
@@ -57,49 +55,28 @@ const RandomeGenerate = () => {
 
   return (
     <>
-      <div className='G_Body' style={{ background: gradientStyle }}>
+     <div>
+      <GradientNavbar />
+      <div className='gradient-body' style={{ background: gradientStyle }}>
+        <div className='gradient-main'>
+            <div className='gradient-position-buttons pt-20'>
+              {['to top', 'to bottom', 'to left', 'to right', 'to top left', 'to top right', 'to bottom left', 'to bottom right'].map((pos, idx) => (
+                <button key={idx} className={`gradient-button arrow-${idx + 1}`}   onClick={() => setPosition(pos)}>
+                      <img src={arrow} alt="" height={"20px"} width={"25px"}/>
 
-        <div className="G_main">
-          <div className='G_Nav'>
-            <GradientNavbar />
-          </div>
-
-          <div className='G_positio2'>
-            <div className='G_positions'>
-              <button className='Gbtns_p a1' onClick={() => handlePositionClick('to top')}>
-                <img src={arrow} alt="" />
-              </button>
-              <button className='Gbtns_p a2' onClick={() => handlePositionClick('to bottom')}>
-                <img src={arrow} alt="" />
-              </button>
-              <button className='Gbtns_p a3' onClick={() => handlePositionClick('to left')}>
-                <img src={arrow} alt="" />
-              </button>
-              <button className='Gbtns_p a4' onClick={() => handlePositionClick('to right')}>
-                <img src={arrow} alt="" />
-              </button>
-              <button className='Gbtns_p a5' onClick={() => handlePositionClick('to top left')}>
-                <img src={arrow} alt="" />
-              </button>
-              <button className='Gbtns_p a6' onClick={() => handlePositionClick('to top right')}>
-                <img src={arrow} alt="" />
-              </button>
-              <button className='Gbtns_p a7' onClick={() => handlePositionClick('to bottom left')}>
-                <img src={arrow} alt="" />
-              </button>
-              <button className='Gbtns_p a8' onClick={() => handlePositionClick('to bottom right')}>
-                <img src={arrow} alt="" />
-              </button>
+                </button>
+              ))}
             </div>
 
-            <div className='colorbtns'>
+            <div className='color-buttons'>
               {colors.map((color, index) => (
                 <button key={index} className='G_colorBtn py-4 px-4 focus:outline-none text-center me-2 mb-2' style={{ backgroundColor: color }} onClick={() => handleColorChange(index)}>{color}</button>
               ))}
             </div>
-            <div className="cpyCode" onClick={handleCopyClick}>
-              {`background: ${gradientStyle};`}
-            </div>
+
+            <div className="copy-code" onClick={handleCopyClick}>
+            {`background: ${gradientStyle};`}
+          </div>
           </div>
 
         </div>
