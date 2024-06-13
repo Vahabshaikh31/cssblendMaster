@@ -35,3 +35,28 @@
 body {
     background-color: #ffffff;
 }
+
+.shadows{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.G_colorBtn {
+    background-color: #693a7d;
+    color: #fff;
+    height: 5.6rem;
+    width: 18rem;
+    margin: 1rem;
+    border-radius: 50px;
+    box-shadow: 10px 10px 14px 1px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.094em;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .G_colorBtn:hover {
+    transform: translateY(-5px); /* Add a subtle hover effect */
+  }

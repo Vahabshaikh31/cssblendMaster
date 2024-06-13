@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './_2ColorAtTime.css';
 import GradientNavbar from '../Navbr/GradientNavbar';
 import { hsvaToHex } from '@uiw/color-convert';
 import Chrome from '@uiw/react-color-chrome';
@@ -15,7 +14,7 @@ const _2ColorAtTime = () => {
   const hex1 = hsvaToHex(hsva1);
   const hex2 = hsvaToHex(hsva2);
 
-  const [position, setPosition] = useState('to right');
+  const [position, setPosition] = useState('to-right');
   const [gradientStyle, setGradientStyle] = useState('');
 
   useEffect(() => {
@@ -36,9 +35,9 @@ const _2ColorAtTime = () => {
       <div className='gradient-body' style={{ background: gradientStyle }}>
         <div className='gradient-main'>
           <div className='gradient-position-buttons pt-20'>
-            {['to top', 'to bottom', 'to left', 'to right', 'to top left', 'to top right', 'to bottom left', 'to bottom right'].map((pos, idx) => (
+            {['to-top', 'to-bottom', 'to-left', 'to-right', 'to-tl', 'to-tr', 'to-bl', 'to-br'].map((pos, idx) => (
               <button key={idx} className={`gradient-button arrow-${idx + 1}`} onClick={() => setPosition(pos)}>
-                <img src={arrow} alt="" height={"20px"} width={"25px"}/>
+                <img src={arrow} alt="" className="h-5 w-5" />
               </button>
             ))}
           </div>
@@ -53,7 +52,7 @@ const _2ColorAtTime = () => {
                 />
               )}
               <button
-                className='G_colorBtn py-4 px-4 focus:outline-none text-center me-2 mb-2'
+                className='G_colorBtn py-2 px-4 focus:outline-none text-center me-2 mb-2'
                 style={{ backgroundColor: hex1 }}
                 onClick={() => setHidden1(!hidden1)}
               >
@@ -70,7 +69,7 @@ const _2ColorAtTime = () => {
                 />
               )}
               <button
-                className='G_colorBtn py-4 px-4 focus:outline-none text-center me-2 mb-2'
+                className='G_colorBtn py-2 px-4 focus:outline-none text-center me-2 mb-2'
                 style={{ backgroundColor: hex2 }}
                 onClick={() => setHidden2(!hidden2)}
               >
@@ -78,7 +77,7 @@ const _2ColorAtTime = () => {
               </button>
             </div>
           </div>
-          <div className="copy-code" onClick={handleCopyClick}>
+          <div className="copy-code py-2 px-4 rounded-lg bg-gray-200 text-gray-800 hover:bg-gray-300 cursor-pointer" onClick={handleCopyClick}>
             {`background: ${gradientStyle};`}
           </div>
         </div>
