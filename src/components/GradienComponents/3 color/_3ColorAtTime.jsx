@@ -1,8 +1,9 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import GradientNavbar from '../Navbr/GradientNavbar';
 import { hsvaToHex } from '@uiw/color-convert';
 import Chrome from '@uiw/react-color-chrome';
 import { GithubPlacement } from '@uiw/react-color-github';
+import Swal from 'sweetalert2';
 import arrow from '../../../assets/arrow.svg';
 import './_3ColorAtTime.css';
 
@@ -27,11 +28,13 @@ const _3ColorAtTime = () => {
   }, [position, hex1, hex2, hex3]);
 
   const handleCopyClick = () => {
-    setHidden1(!hidden1);
-    setHidden2(!hidden2);
-    setHidden3(!hidden3);
     navigator.clipboard.writeText(`background: ${gradientStyle};`).then(() => {
-      alert('Copied to clipboard');
+      Swal.fire({
+        icon: 'success',
+        title: 'Copied to clipboard',
+        showConfirmButton: false,
+        timer: 1500
+      });
     });
   };
 
@@ -39,15 +42,15 @@ const _3ColorAtTime = () => {
     <div>
       <GradientNavbar />
       <div className='gradient-body' style={{ background: gradientStyle }}>
-        <div className='gradient-main'>
-          <div className='gradient-position-buttons pt-20'>
+        <div className='gradient-main pt-36'>
+          <div className="flex flex-wrap justify-center">
             {['to top', 'to bottom', 'to left', 'to right', 'to top left', 'to top right', 'to bottom left', 'to bottom right'].map((pos, idx) => (
-              <button key={idx} className={`gradient-button arrow-${idx + 1}`} onClick={() => setPosition(pos)}>
-                    <img src={arrow} alt="" height={"20px"} width={"25px"}/>
+              <button key={idx} className="m-2 p-2 rounded-full hover:bg-gray-200 focus:outline-none" onClick={() => setPosition(pos)}>
+                <img src={arrow} alt="" height="20px" width="25px" className={`transform ${arrowRotations[idx]}`} />
               </button>
             ))}
           </div>
-          <div className='color-buttons'>
+          <div className='color-buttons flex flex-wrap justify-center'>
             <div className='color-picker-container'>
               {hidden1 && (
                 <Chrome
@@ -100,7 +103,7 @@ const _3ColorAtTime = () => {
               </button>
             </div>
           </div>
-          <div className="copy-code" onClick={handleCopyClick}>
+          <div className="mt-4 p-4 rounded bg-gray-800 text-white cursor-pointer copy-code" onClick={handleCopyClick}>
             {`background: ${gradientStyle};`}
           </div>
         </div>
@@ -108,5 +111,16 @@ const _3ColorAtTime = () => {
     </div>
   );
 };
+
+const arrowRotations = [
+  'rotate-270',
+  'rotate-90',
+  'rotate-180',
+  'rotate-0',
+  'rotate-235',
+  '-rotate-45',
+  'rotate-125',
+  'rotate-45'
+];
 
 export default _3ColorAtTime;

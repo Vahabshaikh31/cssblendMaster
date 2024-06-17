@@ -11,17 +11,16 @@ const GradientNavbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r z-40 fixed w-screen from-blue-500 to-teal-400 text-white shadow-lg">
+    <nav className="bg-gradient-to-r z-40 fixed w-screen  bg-white to-teal-400 text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <img className="h-8 w-8" src={IMG} alt="Logo" />
-            <h1 className="ml-3 text-xl font-bold">CSS Blend Master</h1>
+          <div className="flex  items-center">
+            <img width={"130rem"} height={"70rem"} src={IMG} alt="Logo" />
           </div>
           <div className="-mr-2 flex md:hidden">
             <button
               onClick={toggleNavbar}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-400 hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-400 hover:bg-gray-700 outline-none bg-gray-700 "
             >
               <svg
                 className="h-6 w-6"
@@ -53,6 +52,7 @@ const GradientNavbar = () => {
               <NavLink to="/randomGenerate" className="nav-link" activeClassName="active-link">RANDOM</NavLink>
               <NavLink to="/_2ColorAtTime" className="nav-link" activeClassName="active-link">2 COLOR</NavLink>
               <NavLink to="/_3ColorAtTime" className="nav-link" activeClassName="active-link">3 COLOR</NavLink>
+              <NavLink to="/BoxContainer" className="nav-link" activeClassName="active-link">BOX SHADOW</NavLink>
             </div>
           </div>
         </div>
@@ -63,6 +63,7 @@ const GradientNavbar = () => {
           <NavLink to="/randomGenerate" className="nav-link" activeClassName="active-link" onClick={toggleNavbar}>RANDOM</NavLink>
           <NavLink to="/_2ColorAtTime" className="nav-link" activeClassName="active-link" onClick={toggleNavbar}>2 COLOR</NavLink>
           <NavLink to="/_3ColorAtTime" className="nav-link" activeClassName="active-link" onClick={toggleNavbar}>3 COLOR</NavLink>
+          <NavLink to="/BoxContainer" className="nav-link" activeClassName="active-link" onClick={toggleNavbar}>Box shadow</NavLink>
         </div>
       </div>
     </nav>

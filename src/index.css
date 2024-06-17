@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.377);
 }
 
 @media (width <=876) {
@@ -31,15 +32,15 @@
 
 .active{
     color: rgb(0, 0, 0);
+
 }
 body {
     background-color: #ffffff;
 }
 
-.shadows{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
-}
+.shadows1{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}   
 
 .G_colorBtn {
     background-color: #693a7d;

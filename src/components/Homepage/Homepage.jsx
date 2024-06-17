@@ -17,8 +17,6 @@ const Homepage = () => {
   };
 
   const scrollDown = () => scrollByVH(1);
-  
-      
     return (
         <>
                 <GradientNavbar />

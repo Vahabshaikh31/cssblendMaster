@@ -5,6 +5,7 @@
   import Swal from 'sweetalert2';
 
   const ColorPaletteCard = () => {
+    
     const copyText = (color) => {
       navigator.clipboard.writeText(color); 
       const Toast = Swal.mixin({

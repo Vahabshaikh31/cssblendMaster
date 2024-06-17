@@ -3,20 +3,20 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(to right top, #116af1, #009bff, #00bad8, #00ce7c, #94d600);
-    
-}
-
-.gradient-main {
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .gradient-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
-    padding: 20px;
-}
-
-.gradient-button {
+    height: 100%;
+  }
+  
+  .gradient-button {
     height: 3.6rem;
     width: 3.6rem;
     border-radius: 50%;
@@ -28,69 +28,70 @@
     outline: none;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-.arrow-1 {
+  }
+  
+  .arrow-1 {
     transform: rotate(270deg);
-}
-
-.arrow-2 {
+  }
+  
+  .arrow-2 {
     transform: rotate(90deg);
-}
-
-.arrow-3 {
+  }
+  
+  .arrow-3 {
     transform: rotate(180deg);
-}
-
-.arrow-4 {
+  }
+  
+  .arrow-4 {
     transform: rotate(0deg);
-}
-
-.arrow-5 {
+  }
+  
+  .arrow-5 {
     transform: rotate(235deg);
-}
-
-.arrow-6 {
+  }
+  
+  .arrow-6 {
     transform: rotate(-45deg);
-}
-
-.arrow-7 {
+  }
+  
+  .arrow-7 {
     transform: rotate(125deg);
-}
-
-.arrow-8 {
+  }
+  
+  .arrow-8 {
     transform: rotate(45deg);
-}
-
-.color-buttons {
+  }
+  
+  .color-buttons {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
-}
-
-.color-picker-container {
+  }
+  
+  .color-picker-container {
     position: relative;
-}
-
-.color-picker {
+  }
+  
+  .color-picker {
     position: absolute;
     transform: scale(0.9);
     top: -1rem;
-}
-
-.color-button {
+  }
+  
+  .color-button {
     padding: 16px;
     margin: 0 10px;
     border: 1px solid black;
     cursor: pointer;
     transition: transform 0.3s;
-}
-
-.color-button:hover {
+  }
+  
+  .color-button:hover {
     transform: translateY(-5px);
-}
-
-.copy-code {
+  }
+  
+  .copy-code {
     margin: 20px auto;
     padding: 15px 20px;
     border-left: 3px solid #fff;
@@ -100,4 +101,35 @@
     font-family: 'Space Mono', monospace;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .gradient-main {
+      padding: 10px;
+    }
+    
+    .color-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .gradient-button {
+      margin: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gradient-body {
+      padding: 10px;
+    }
+  
+    .gradient-button {
+      height: 2.8rem;
+      width: 2.8rem;
+    }
+  
+    .copy-code {
+      font-size: 14px;
+    }
+  }
+  
