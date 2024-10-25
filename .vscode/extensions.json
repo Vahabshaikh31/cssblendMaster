@@ -1,6 +1,8 @@
 {
     "recommendations": [
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "paulmolluzzo.convert-css-in-js",
+        "sporiley.css-auto-prefix"
     ]
 }
